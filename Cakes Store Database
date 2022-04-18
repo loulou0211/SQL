@@ -1,0 +1,19 @@
+CREATE TABLE cakes (id INTEGER PRIMARY KEY, name TEXT, ingredients TEXT, size TEXT, price INTEGER);
+
+INSERT INTO cakes VALUES (1, "Pistachio Sans Rival", "butter, eggs and nuts", "9 inch round", 50);
+INSERT INTO cakes VALUES (2, "Ube Cashew Sans Rival", "butter, eggs and nuts", "9 inch round", 50);
+INSERT INTO cakes VALUES (3, "Yema Cake", "milk, cheese, eggs", "10 inch round", 48);
+INSERT INTO cakes VALUES (4, "Burnt Mocha Cake", "creamcheese, milk,coffee, and eggs", "10 inch round", 45);
+INSERT INTO cakes VALUES (5, "Ube Cake", "purple yum, eggs and milk", "9 inch round", 48);
+INSERT INTO cakes VALUES (6, "Mocha Cake", "coffee, eggs and milk", "9 inch round", 45);
+INSERT INTO cakes VALUES (7, "Chocolate Cake", "eggs and milk", "9 inch round", 45);
+INSERT INTO cakes VALUES (8, "Tiramisu", "coffee, eggs and milk", "8 inch round", 40);
+INSERT INTO cakes VALUES (9, "Birthday Cake", "eggs and milk", "10 inch round", 50);
+INSERT INTO cakes VALUES (10, "Red Velvet", "eggs and milk", "8 inch round", 38);
+INSERT INTO cakes VALUES (11, "Blue Velvet Cake", "eggs and milk", "9 inch round", 38);
+INSERT INTO cakes VALUES (12, "Kevski", "nuts, eggs and milk", "10 inch round", 60);
+INSERT INTO cakes VALUES (13, "Mango Bravo", "mango,eggs and milk", "10 inch round", 70);
+INSERT INTO cakes VALUES (14, "Oreo Cheesecake", "eggs and milk", "9 inch round", 45);
+INSERT INTO cakes VALUES (15, "Ube Cheesecake", "purple yam, eggs and milk", "9 inch round", 48);
+
+SELECT * FROM cakes GROUP BY price;
