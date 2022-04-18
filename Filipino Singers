@@ -1,0 +1,25 @@
+/* Create table about the people and what they do here */
+CREATE TABLE pinoy_singers (id INTEGER PRIMARY KEY, Name TEXT, Age INTEGER, Genres TEXT);
+
+INSERT INTO pinoy_singers VALUES (1, 'Moira Dela Torre', 28, 'OPM');
+INSERT INTO pinoy_singers VALUES (2, 'Kyla', 41, 'R&B');
+INSERT INTO pinoy_singers VALUES (3, 'Regine Velasquez', 51, 'POP');
+INSERT INTO pinoy_singers VALUES (4, 'Ogie Alcasid', 54, 'Novelty');
+INSERT INTO pinoy_singers VALUES (5, 'Janno Gibbs', 52, 'Soul');
+INSERT INTO pinoy_singers VALUES (6, 'Gary Velenciano', 57, 'OPM');
+
+
+CREATE TABLE popular_songs (id INTEGER PRIMARY KEY, Songs TEXT);
+
+INSERT INTO popular_songs VALUES (1, 'Patawad');
+INSERT INTO popular_songs VALUES (2, 'Hanggang Ngayon');
+INSERT INTO popular_songs VALUES (3, 'Ikaw');
+INSERT INTO popular_songs VALUES (4, 'Nandito Ako');
+INSERT INTO popular_songs VALUES (5, 'Fallin');
+INSERT INTO popular_songs VALUES (6, 'Sana Maulit Muli');
+
+
+SELECT Name, Age, Genres, Songs
+FROM pinoy_singers
+JOIN popular_songs
+ON pinoy_singers.id = popular_songs.id;
